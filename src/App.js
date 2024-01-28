@@ -1,39 +1,23 @@
-// import logo from './logo.svg';
-// import './App.css';
-
+import Button from "./components/Button"
 import MyFooter from "./components/Footer"
 import MyHeader from "./components/Header"
+import MyButton from "./components/MyButton"
 import './index.css'
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+//data jab aik component se dusre comp bhejna ho tw hum props(properties) ke zariyee, prop by default hota he har func me
 function App(){
     return(
         <div>
-            <MyHeader />
-            <h3>My First Class Of React</h3>
-            <MyFooter />
-
+            {/* <MyHeader heading = {"My First Class Of React"}
+            text= {`My dummy text with React`}
+            num ={10}
+            />  */}
+            {/* it is like object with attribute */}
+            {/* <h3>Hello World</h3>
+            <MyFooter /> */}
+            <MyButton text="Reset" />
+            <MyButton text="Dec"/>
+            <MyButton text="Inc" />
         </div>
     )
 }
